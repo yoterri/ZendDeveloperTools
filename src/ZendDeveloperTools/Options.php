@@ -35,6 +35,7 @@ class Options extends AbstractOptions
             'memory'    => 'ZendDeveloperTools\MemoryCollector',
             'time'      => 'ZendDeveloperTools\TimeCollector',
             'cookie'    => 'ZendDeveloperTools\CookieCollector',
+            'session'    => 'ZendDeveloperTools\SessionCollector',
         ),
     );
 
@@ -53,6 +54,7 @@ class Options extends AbstractOptions
             'config'  => 'zend-developer-tools/toolbar/config',
             'db'      => 'zend-developer-tools/toolbar/db',
             'cookie'  => 'zend-developer-tools/toolbar/cookie',
+            'session'  => 'zend-developer-tools/toolbar/session',
         ),
     );
 
