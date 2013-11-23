@@ -30,6 +30,10 @@ class DebugCollector extends AbstractCollector
     {
     }
 
+    /**
+     * @param mixed $value
+     * @param string $label
+     */
     function debug($value, $label = null)
     {
         $backtrace = debug_backtrace();
@@ -37,11 +41,10 @@ class DebugCollector extends AbstractCollector
         
         $function = $backtrace[$index + 1]['function'];
         $line = $backtrace[$index]['line'];
-        // $file = $backtrace[$index]['file'];
         $class = $backtrace[$index + 1]['class'];
+        // $file = $backtrace[$index]['file'];
         // $object = $backtrace[$index]['object'];
         // $type = $backtrace[$index]['type'];
-        
         
         if(is_object($value))
         {
@@ -56,11 +59,11 @@ class DebugCollector extends AbstractCollector
         
         if(empty($label))
         {
-            $this->data['vars'][] = $data;
+            $this->data[] = $data;
         }
         else
         {
-            $this->data['vars'][$label] = $data;
+            $this->data[$label] = $data;
         }
     }
 
@@ -70,11 +73,12 @@ class DebugCollector extends AbstractCollector
      */
     public function getData()
     {
-        return $this->data['vars'];
+        return $this->data;
     }
 
     /**
-     * @param mixed $value
+     *
+     * @param mixed $value            
      * @return boolean
      */
     protected function _isSerializable($value)
