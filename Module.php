@@ -152,6 +152,7 @@ class Module implements
         return array(
             'aliases' => array(
                 'ZendDeveloperTools\ReportInterface' => 'ZendDeveloperTools\Report',
+                'Debugger'           => 'ZendDeveloperTools\DebugCollector',
             ),
             'invokables' => array(
                 'ZendDeveloperTools\Report'             => 'ZendDeveloperTools\Report',
@@ -167,6 +168,7 @@ class Module implements
                 'ZendDeveloperTools\CookieCollector'    => 'ZendDeveloperTools\Collector\CookieCollector',
                 'ZendDeveloperTools\SessionCollector'   => 'ZendDeveloperTools\Collector\SessionCollector',
                 'ZendDeveloperTools\PostCollector'      => 'ZendDeveloperTools\Collector\PostCollector',
+                'ZendDeveloperTools\DebugCollector'     => 'ZendDeveloperTools\Collector\DebugCollector',
             ),
             'factories' => array(
                 'ZendDeveloperTools\Profiler' => function ($sm) {

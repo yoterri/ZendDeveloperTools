@@ -37,6 +37,7 @@ class Options extends AbstractOptions
             'cookie'    => 'ZendDeveloperTools\CookieCollector',
             'session'   => 'ZendDeveloperTools\SessionCollector',
             'post'      => 'ZendDeveloperTools\PostCollector',
+            'debug'      => 'ZendDeveloperTools\DebugCollector',
         ),
     );
 
@@ -57,6 +58,7 @@ class Options extends AbstractOptions
             'cookie'  => 'zend-developer-tools/toolbar/cookie',
             'session' => 'zend-developer-tools/toolbar/session',
             'post'    => 'zend-developer-tools/toolbar/post',
+            'debug'   => 'zend-developer-tools/toolbar/debug',
         ),
     );
 
