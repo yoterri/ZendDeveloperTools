@@ -164,6 +164,7 @@ class Module implements
                 'ZendDeveloperTools\MemoryCollector'    => 'ZendDeveloperTools\Collector\MemoryCollector',
                 'ZendDeveloperTools\TimeCollector'      => 'ZendDeveloperTools\Collector\TimeCollector',
                 'ZendDeveloperTools\FlushListener'      => 'ZendDeveloperTools\Listener\FlushListener',
+                'ZendDeveloperTools\CookieCollector'    => 'ZendDeveloperTools\Collector\CookieCollector',
             ),
             'factories' => array(
                 'ZendDeveloperTools\Profiler' => function ($sm) {
