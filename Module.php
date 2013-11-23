@@ -165,7 +165,8 @@ class Module implements
                 'ZendDeveloperTools\TimeCollector'      => 'ZendDeveloperTools\Collector\TimeCollector',
                 'ZendDeveloperTools\FlushListener'      => 'ZendDeveloperTools\Listener\FlushListener',
                 'ZendDeveloperTools\CookieCollector'    => 'ZendDeveloperTools\Collector\CookieCollector',
-                'ZendDeveloperTools\SessionCollector'    => 'ZendDeveloperTools\Collector\SessionCollector',
+                'ZendDeveloperTools\SessionCollector'   => 'ZendDeveloperTools\Collector\SessionCollector',
+                'ZendDeveloperTools\PostCollector'      => 'ZendDeveloperTools\Collector\PostCollector',
             ),
             'factories' => array(
                 'ZendDeveloperTools\Profiler' => function ($sm) {
