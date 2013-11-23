@@ -17,16 +17,16 @@ $color = ($this->collector->getStatusCode() < 400)
         </span>
     </div>
     <div class="zdt-toolbar-detail">
-        <span class="zdt-toolbar-info zdt-toolbar-info-redundant">
-            <span class="zdt-detail-label">Status code</span>
-            <span class="zdt-detail-value zdt-toolbar-bold zdt-toolbar-color-<?php echo $color; ?>">
-                <?php echo $this->collector->getStatusCode(); ?>
-            </span>
-        </span>
         <span class="zdt-toolbar-info">
             <span class="zdt-detail-label">Method</span>
             <span class="zdt-detail-value">
                 <?php echo $this->collector->getMethod(); ?>
+            </span>
+        </span>
+        <span class="zdt-toolbar-info">
+            <span class="zdt-detail-label">Controler</span>
+            <span class="zdt-detail-value zdt-toolbar-bold">
+                <?php echo $this->collector->getFullControllerName(false); ?>
             </span>
         </span>
         <span class="zdt-toolbar-info zdt-toolbar-extra-info-redundant">
