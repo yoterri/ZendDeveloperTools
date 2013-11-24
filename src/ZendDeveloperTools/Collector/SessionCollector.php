@@ -27,7 +27,10 @@ class SessionCollector extends AbstractCollector
      */
     public function collect(MvcEvent $mvcEvent)
     {
-        $this->data = $_SESSION;
+        if(isset($_SESSION))
+            $this->data = $_SESSION;
+        else 
+            $this->data = array();
     }
 
     /**
