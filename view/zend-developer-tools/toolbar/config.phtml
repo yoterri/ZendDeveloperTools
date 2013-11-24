@@ -8,9 +8,7 @@
             <span class="zdt-detail-label">Merged Config (<code>Config</code>)</span>
         </span>
         <span class="zdt-toolbar-info">
-            <span class="zdt-detail-pre">
-<?php Zend\Debug\Debug::dump($this->collector->getConfig()); ?>
-            </span>
+            <span class="zdt-detail-pre"><pre><?php print_r($this->collector->getConfig()); ?></pre></span>
         </span>
     </div>
 </div>
@@ -24,9 +22,7 @@
             <span class="zdt-detail-label">Application Config (<code>ApplicationConfig</code>)</span>
         </span>
         <span class="zdt-toolbar-info">
-            <span class="zdt-detail-pre">
-<?php Zend\Debug\Debug::dump($this->collector->getApplicationConfig()); ?>
-            </span>
+            <span class="zdt-detail-pre"><pre><?php print_r($this->collector->getApplicationConfig()); ?></pre></span>
         </span>
     </div>
 </div>
