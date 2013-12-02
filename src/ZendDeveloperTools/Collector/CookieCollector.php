@@ -28,7 +28,14 @@ class CookieCollector extends AbstractCollector
     public function collect(MvcEvent $mvcEvent)
     {
         $cookie = $mvcEvent->getRequest()->getCookie();
-        $this->data = $cookie->getArrayCopy();
+        if($cookie)
+        {
+            $this->data = $cookie->getArrayCopy();
+        }
+        else
+        {
+            $this->data = array();
+        }
     }
 
     /**
